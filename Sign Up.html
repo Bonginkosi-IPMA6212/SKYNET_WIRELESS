@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up | SKYNET</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='Sign Up.css'>
+    <script type="text/javascript" src="Validation.js" defer></script>
+    <link rel="icon" type="image/png" href="Images/circle_14024896.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="Hotspot-Service.html" target="_blank"><b>Hotspot</b></a></li>
+                <li><a href="Premium-Products.html" target="_blank"><b>Products</b></a></li>
+                <li><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <li><button class="logout-button">Sign Up/Sign in</button></li>
+            </ul>
+            <ul>
+                <li class="web-logo">
+                    <img src="Images/wifi_5844489.png" height="35px" alt="wifi icon">
+                    <a href="index.html"><b>SKYNET</b></a>
+                </li>
+                <li class="hideOnMobile"><a href="Hotspot-Service.html" target="_blank"><b>Hotspot</b></a></li>
+                <li class="hideOnMobile"><a href="Premium-Products.html" target="_blank"><b>Products</b></a></li>
+                <li class="hideOnMobile"><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li class="hideOnMobile"><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <a class="hideOnMobile" href="Sign Up.html">
+                    <button class="logout-button">Sign Up/Sign in</button>
+                </a>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+    
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+
+    <div class="wrapper">
+        <h1>SignUp</h1>
+        <form id="form">
+            <div>
+                <label for="firstname-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/></svg>
+                </label>
+                <input type="text" name="firstname" id="firstname-input" placeholder="Firstname" required>
+            </div>
+            <div>
+                <label for="email-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v58q0 59-40.5 100.5T740-280q-35 0-66-15t-52-43q-29 29-65.5 43.5T480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480v58q0 26 17 44t43 18q26 0 43-18t17-44v-58q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h200v80H480Zm0-280q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+                </label>
+                <input type="email" name="email" id="email-input" placeholder="Email">
+            </div>
+            <div>
+                <label for="password-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+                </label>
+                <input type="password" name="password" id="password-input" placeholder="Password" required>
+            </div>
+            <div>
+                <label for="repeat-password-input">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+                </label>
+                <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password">
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already Have An Account ? <a href="Login.html" target="_blank">CLICK TO LOGIN</a></p>
+    </div>
+
+    <footer>
+        <div class="Master">
+            <div class="Company-Name">
+                <h1>SKYNET</h1>
+                <h2>Connecting Every Corner Of Tomorrow</h2>
+            </div>
+            <div class="Quick-Links">
+                <h2>Quick Links</h2>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="Hotspot-Service.html" target="_blank">Hotspot-Service</a>
+                <a href="Premium-Products.html" target="_blank">Premium-Products</a>
+                <a href="About-Us.html" target="_blank">About-Us</a>
+                <a href="Contact-Us.html" target="_blank">Contact-Us</a>
+            </div>
+            <div class="Policies">
+                <h2>Policies</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Data Protection Policy</a>
+            </div>
+            <div class="icons">
+                <h2>Follow Us Here</h2>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="Master-2">
+            <p>&copy; 2024 Skynet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+
+

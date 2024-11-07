@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SKYNET | Our Premium Products</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='Premium-Products.css'>
+    <link rel="icon" type="image/png" href="Images/circle_14024896.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="Hotspot-Service.html" target="_blank"><b>Hotspot</b></a></li>
+                <li><a href="Premium-Products.html"><b>Products</b></a></li>
+                <li><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <li><button class="logout-button">Sign Up/Sign in</button></li>
+            </ul>
+            <ul>
+                <li class="web-logo">
+                    <img src="Images/wifi_5844489.png" height="35px" alt="wifi icon">
+                    <a href="index.html"><b>SKYNET</b></a>
+                </li>
+                <li class="hideOnMobile"><a href="Hotspot-Service.html" target="_blank"><b>Hotspot</b></a></li>
+                <li class="hideOnMobile"><a href="Premium-Products.html"><b>Products</b></a></li>
+                <li class="hideOnMobile"><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li class="hideOnMobile"><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <a class="hideOnMobile" href="Sign Up.html" target="_blank">
+                    <button class="logout-button">Sign Up/Sign in</button>
+                </a>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        </header>
+    
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+    
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+
+    
+
+<div class="content">
+    <div class="left-column">
+        <h2 class="premium1">PREMIUM 1</h2>
+        <img src="Images/router_5993218.png" style="float: right; height: 60px; margin-right: 25px;">
+        <ul>
+            <li>Speed : 3/5 MBps</li>
+            <br>
+            <li>UNLIMITED</li>
+            <br>
+            <li>UNTHROTTLED</li>
+            <br>
+            <li>Access to any wifi hotspot service for <b class="free">FREE</b></li>
+            <br>
+            <li>Price : R300 per month + <b>(Once off installation fee : R500)</b></li>
+        </ul>
+    </div>
+    <div class="right-column">
+        <h2 class="premium2">PREMIUM 2</h2>
+        <img src="Images/router_5993218.png" style="float: right; height: 60px; margin-right: 25px;">
+        <ul>
+            <li>Speed : 5/10 MBps</li>
+            <br>
+            <li>UNLIMITED</li>
+            <br>
+            <li>UNTHROTTLED</li>
+            <br>
+            <li>Access to any wifi hotspot service for <b class="free">FREE</b></li>
+            <br>
+            <li>Price : R500 per month + <b>(Once off installation fee : R500)</b></li>
+        </ul>
+    </div>
+</div>
+<p class="Interested" style="text-align: center;">Interested ? Reach out to us on +27 11 234 6687 or Via our <a href="Contact-Us.html" target="_blank">Contact Page</a></p>
+    
+    <footer>
+        <div class="Master">
+            <div class="Company-Name">
+                <h1>SKYNET</h1>
+                <h2>Connecting Every Corner Of Tomorrow</h2>
+            </div>
+            <div class="Quick-Links">
+                <h2>Quick Links</h2>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="Hotspot-Service.html" target="_blank">Hotspot-Service</a>
+                <a href="Premium-Products.html" target="_blank">Premium-Products</a>
+                <a href="About-Us.html" target="_blank">About-Us</a>
+                <a href="Contact-Us.html" target="_blank">Contact-Us</a>
+            </div>
+            <div class="Policies">
+                <h2>Policies</h2>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Data Protection Policy</a>
+            </div>
+            <div class="icons">
+                <h2>Follow Us Here</h2>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="Master-2">
+            <p>&copy; 2024 Skynet. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

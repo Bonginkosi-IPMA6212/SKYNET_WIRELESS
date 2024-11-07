@@ -1,0 +1,312 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    
+}
+
+nav {
+    background-color: limegreen;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 80px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.web-logo:hover {
+    background-color: #f0f0f0;
+}
+.web-logo {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    padding: 0%; 
+}
+
+.web-logo img {
+    margin-top: 0; 
+    margin-right: 8px; 
+}
+
+.web-logo a {
+    padding: 0%;
+    font-size: 26px;
+}
+
+.web-logo a:hover {
+    color: black;
+}
+
+.logout-button {
+    background-color: rgb(46, 42, 42); 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(245, 245, 245, 0.582);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.sidebar li {
+    width: 100%;
+
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+/*content div*/
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 18px;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    padding: 10px;
+    box-shadow: 10px 0px 12px rgba(26, 25, 25, 0.1);
+    padding-left: 35px;
+}
+
+.premium1, .premium2 {
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 30px;
+    color: green;
+}
+
+.free {
+    text-decoration: underline;
+}
+
+/*End*/
+
+.Interested {
+    margin-bottom: 26px;
+}
+
+.Interested a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+/*FOOTER*/
+footer {
+    background: linear-gradient(180deg, green, black);
+}
+
+.Master {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    border-bottom: 4px solid white;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.Company-Name {
+    text-align: center;
+    color: white;
+    width: 25%;
+}
+
+.Company-Name h1 {
+    margin-bottom: 25px;
+    color: lime;
+}
+
+
+.Quick-Links {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.Quick-Links h2 {
+    text-align: center;
+    margin-bottom: 13px;
+    color: lime;
+    text-decoration: underline;
+}
+
+.Quick-Links a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 13px;
+}
+
+.Quick-Links a:hover {
+    color: lime;
+}
+
+.Policies {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.Policies h2 {
+    margin-bottom: 13px;
+    color: lime;
+    text-decoration: underline;
+
+}
+.Policies a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 13px;
+}
+
+.Policies a:hover {
+    color: lime;
+}
+
+.icons {
+    color: white;
+}
+
+.icons h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: lime;
+    text-decoration: underline;
+}
+
+.icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 12px;
+
+}
+
+.icons a:hover {
+    color: lime;
+}
+
+.Master-2 {
+    padding: 30px;
+    text-align: center;
+    background-color: limegreen;
+    
+}
+
+.Master-2 p {
+    color: black;
+    font-weight: bold;
+}
+/*END OF THE FOOTER*/
+
+@media (max-width:960px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width:960px) {
+    .sidebar {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        padding: 20px 10px; 
+    }
+
+    .Master {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .left-column, .right-column {
+        margin-bottom: 30px;
+        width: auto;
+    }
+
+    .Company-Name, .Quick-Links, .Policies {
+        margin-bottom: 20px;
+    }
+}

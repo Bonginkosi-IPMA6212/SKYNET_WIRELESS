@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SKYNET | Our Hotspot Service</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='Hotspot-Service.css'>
+    <link rel="icon" type="image/png" href="Images/circle_14024896.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="Hotspot-Service.html"><b>Hotspot</b></a></li>
+                <li><a href="Premium-Products.html" target="_blank"><b>Products</b></a></li>
+                <li><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <li><button class="logout-button">Sign Up/Sign in</button></li>
+            </ul>
+            <ul>
+                <li class="web-logo">
+                    <img src="Images/wifi_5844489.png" height="35px" alt="wifi icon">
+                    <a href="index.html"><b>SKYNET</b></a>
+                </li>
+                <li class="hideOnMobile"><a href="Hotspot-Service.html"><b>Hotspot</b></a></li>
+                <li class="hideOnMobile"><a href="Premium-Products.html" target="_blank"><b>Products</b></a></li>
+                <li class="hideOnMobile"><a href="Contact-Us.html" target="_blank"><b>Contact</b></a></li>
+                <li class="hideOnMobile"><a href="About-Us.html" target="_blank"><b>About Us</b></a></li>
+                <a class="hideOnMobile" href="Sign Up.html" target="_blank">
+                    <button class="logout-button">Sign Up/Sign in</button>
+                </a>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        </header>
+    
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+    
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    
+
+    <div class="benefits">
+        <h2>Why Choose our Hotspot Service ?</h2>
+        <ul>
+            <img src="Images/technology_14874647.png" height="80px" style="float: right;">
+            <li><strong>Reliable Connectivity:</strong> Enjoy fast and stable internet connections.</li>
+            <br>
+            <li><strong>Wide Coverage Area:</strong> Access Wi-Fi in parks, community centers, and more.</li>
+            <br>
+            <li><strong>Easy Access:</strong> Simple login process for quick connections.</li>
+            <br>
+            <li><strong>Affordable Plans:</strong> Flexible pricing options for everyone.</li>
+        </ul>
+    </div>
+    <div class="how-to-connect">
+        <h2>How to Connect</h2>
+        <ol>
+            <img src="Images/smartphone_5914580.png" height="80px" style="float: right;">
+            <li>Find a Hotspot on our interactive map.</li>
+            <br>
+            <li>Select the Skynet network on your device.</li>
+            <br>
+            <li>Sign in to the network</li>
+            <br>
+            <li>Load a 1foryou voucher or pay via your bank card</li>
+            <br>
+            <li>Once payment is complete, click 'Go Online'</li>
+            <br>
+            <li>Enjoy your browsing!</li>
+        </ol>
+    </div>
+    <div class="prices">
+        <h2>Our Affordable Hotspot Offerings :</h2>
+        <table border="1" style="border-collapse: collapse; width: 80; margin:auto;">
+            <thead>
+                <tr>
+                    <th style="padding: 8px;">Product Type</th>
+                    <th style="padding: 8px;">Duration</th>
+                    <th style="padding: 8px;">Price</th>
+                    <th style="padding: 8px;">Limited/Unlimited</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 8px;">Daily Bundle</td>
+                    <td style="padding: 8px;">24 Hours</td>
+                    <td style="padding: 8px;">R5</td>
+                    <td style="padding: 8px;">Unlimited</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Weekly Bundle</td>
+                    <td style="padding: 8px;">7 Days</td>
+                    <td style="padding: 8px;">R30</td>
+                    <td style="padding: 8px;">Unlimited</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Monthly Bundle</td>
+                    <td style="padding: 8px;">30 Days</td>
+                    <td style="padding: 8px;">R120</td>
+                    <td style="padding: 8px;">Unlimited</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
+    <div class="features">
+        <img src="Images/featured_play_list_100dp_75FB4C_FILL0_wght400_GRAD0_opsz48.png" alt="features" style="float: right; height: 63px; margin-top: 45px;">
+        <h2>Features</h2>
+        <ul>
+            <li><b>Secure Browsing:</b> Encryption to keep your data safe.</li>
+            <br>
+            <li><b>High-Speed Internet:</b> Download and upload speeds that suit your lifestyle.</li>
+            <br>
+            <li><b>Customer Support:</b> 24/7 assistance available.</li>
+        </ul>
+    </div>
+</main>
+
+
+<footer>
+    <div class="Master">
+        <div class="Company-Name">
+            <h1>SKYNET</h1>
+            <h2>Connecting Every Corner Of Tomorrow</h2>
+        </div>
+        <div class="Quick-Links">
+            <h2>Quick Links</h2>
+            <a href="index.html" target="_blank">Home</a>
+            <a href="Hotspot-Service.html" target="_blank">Hotspot-Service</a>
+            <a href="Premium-Products.html" target="_blank">Premium-Products</a>
+            <a href="About-Us.html" target="_blank">About-Us</a>
+            <a href="Contact-Us.html" target="_blank">Contact-Us</a>
+        </div>
+        <div class="Policies">
+            <h2>Policies</h2>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Data Protection Policy</a>
+        </div>
+        <div class="icons">
+            <h2>Follow Us Here</h2>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="Master-2">
+        <p>&copy; 2024 Skynet. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
